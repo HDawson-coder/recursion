@@ -1,0 +1,7 @@
+input, expected
+"radar", true
+"abba", true
+"x", true
+" ", true
+"hannah", true
+"tacocat", true
