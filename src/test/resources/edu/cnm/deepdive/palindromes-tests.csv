@@ -1,10 +1,10 @@
-true
-"radar"
-"abba"
-"x"
-" "
-"hannah"
-"tacocat"
-"sonar"
-"abb"
-"hana"
+input string, expected
+"radar", true
+"abba", true
+"x", true
+"", true
+"hannah", true
+"tacocat", true
+"sonar", false
+"abb", false
+"hana", false

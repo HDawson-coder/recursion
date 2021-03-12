@@ -24,9 +24,10 @@ class PalindromesTest {
 //    assertFalse(expected, Palindromes.checkRecursive(n));
 //  }
 
-  @ParameterizedTest
+  @ParameterizedTest(name = "[{index}] Asserting checkRecursive(\"{0}\") returns {1}.")
   @CsvFileSource(resources = "palindromes-tests.csv", numLinesToSkip = 1)
-  public void computeRecursive(boolean n) {
-      System.out.println(n);
+  public void checkRecursive(String s, boolean expected) {
+    assertEquals(expected, Palindromes.checkRecursive(s));
+      System.out.println(s);
   }
 }
